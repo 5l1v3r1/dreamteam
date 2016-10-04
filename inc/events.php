@@ -10,3 +10,10 @@
 		<div id="projectDesc"></div>
 	</div>
 </div>
+
+<div id="stageHolder">
+	<h1 id="headerStage">Events + Fairs</h1>
+	<div id="projectsStageHolder"></div>
+	<div id="navigationProjects"></div>
+	<div id="navigationPhotos"></div>
+</div>
