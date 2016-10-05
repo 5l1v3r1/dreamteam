@@ -3585,11 +3585,11 @@ HomePage.prototype.setMcPosition = function(ref){
 	//this.adressTmp = "/clients/dteam_dev/";
 	this.adressTmp = "/";
 
-	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"stage_tv", url:"stage.php"}, {title:"Marketting", short:"events_fairs", url:"events.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"development.php"}, {title:"Marketting", short:"marketting", url:"marketting.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"stage_tv", url:"stageM.php"}, {title:"Marketting", short:"events_fairs", url:"eventsM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentM.php"}, {title:"Marketting", short:"marketting", url:"markettingM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"stage_tv", url:"stageT.php"}, {title:"Marketting", short:"events_fairs", url:"eventsT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentT.php"}, {title:"Marketting", short:"marketting", url:"markettingT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
 
 	this.startSite = function(){
