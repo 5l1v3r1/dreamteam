@@ -341,7 +341,7 @@ a {
 
 #logoContainer{
 	position: absolute;
-	width:225px;
+	width:225px !important;
 	height:55px;
 	left:30px;
 	top:20px;

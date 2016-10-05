@@ -4241,7 +4241,7 @@ function startPage(){
 		DTSite.contactPage.startPage();
 		DTSite.openedPage = DTSite.contactPage;
 	}else if(DTSite.selectedMenu == 0){
-		$("#logoContainer").css("display", "none");
+		$("#logoContainer").css("display", "block");
 		$("#titlesContainer").css("display", "none");
 
 		DTSite.homePage.startPage(0.3);
@@ -4623,6 +4623,8 @@ var MainNavi = new function () {
 			    }, 1100);
 			  });
 			// alert("test123");
+
+			$("#logoContainer").css('display', 'block');
 		}else{
 			$("#mobileNaviBtn").css("display", "block");
 
