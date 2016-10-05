@@ -7,7 +7,7 @@
     font-family: "bebas_neueregular", Arial;
     letter-spacing: 30px;
     position: absolute;
-    margin-left: 315px;
+    margin-left: 385px;
 }
 </style>
 
