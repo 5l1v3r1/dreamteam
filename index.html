@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app='drApp'>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -26,7 +26,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico" />	
 </head>
 
-<body>	
+<body ng-controller="mainCtrl">	
 	<div id="bgThree">
 		<canvas id="threeCanvas"></canvas>	
 	</div>
@@ -58,7 +58,7 @@
 		<canvas id="titlesContainer" width="10" height="10" style="display: none;"></canvas>
 	</div>
 
-	<section id="www">
+	<section id="www" >
 		<div id="mobileContent">
 			<div id="scrollingSection">
 				<div id="dynContent"></div>
@@ -161,6 +161,9 @@
 	<script type="text/javascript" src="assets/assets.js"></script>
 	<script type="text/javascript" src="js-min/projects.js"></script>   	
 	<script type="text/javascript" src="js-min/master.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/drapp.js"></script>
 </body>
 
 </html>
