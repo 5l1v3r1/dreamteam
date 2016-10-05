@@ -11,7 +11,6 @@ AboutPage.prototype.setUp = function(){
 }
 
 AboutPage.prototype.startPage = function(){
-	$("#homeHolder").css("display", "none");
 	var delayIt = 2.9;
 
 	if (DTSite.mobileSimple == true || DTSite.webGLReady == false){
