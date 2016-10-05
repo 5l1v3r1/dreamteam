@@ -418,7 +418,7 @@ AboutPage.prototype.setMcPosition = function(ref){
 						projectObj.pictures.push(obj);
 					}*/
 
-					console.log(projectObj);
+					// console.log(projectObj);
 
 					that.stageItems.push(projectObj);
 				});
@@ -1791,13 +1791,13 @@ BgDreamTeam.prototype.update = function(){
 	//this.renderer.render(this.scene, this.camera);
 
 	if (DTSite.counterRender % 60 == 0){
-		console.log('x ', this.camera.position.x);
-		console.log('y ', this.camera.position.y);
-		console.log('z ', this.camera.position.z);
+		// console.log('x ', this.camera.position.x);
+		// console.log('y ', this.camera.position.y);
+		// console.log('z ', this.camera.position.z);
 
-		console.log('rx ', this.cubeLookAt.position.x);
-		console.log('ry ', this.cubeLookAt.position.y);
-		console.log('rz ', this.cubeLookAt.position.z);
+		// console.log('rx ', this.cubeLookAt.position.x);
+		// console.log('ry ', this.cubeLookAt.position.y);
+		// console.log('rz ', this.cubeLookAt.position.z);
 	}
 }
 
@@ -3584,11 +3584,11 @@ HomePage.prototype.setMcPosition = function(ref){
 	//this.adressTmp = "/clients/dteam_dev/";
 	this.adressTmp = "/";
 
-	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About 123", short:"about", url:"about.php"}, {title:"Stage Desing + TV", short:"stage_tv", url:"stage.php"}, {title:"Events + Fairs", short:"events_fairs", url:"events.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"development.php"}, {title:"Marketting", short:"marketting", url:"marketting.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About 456", short:"about", url:"about.php"}, {title:"Stage Desing + TV", short:"stage_tv", url:"stageM.php"}, {title:"Events + Fairs", short:"events_fairs", url:"eventsM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentM.php"}, {title:"Marketting", short:"marketting", url:"markettingM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About 789", short:"about", url:"about.php"}, {title:"Stage Desing + TV", short:"stage_tv", url:"stageT.php"}, {title:"Events + Fairs", short:"events_fairs", url:"eventsT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentT.php"}, {title:"Marketting", short:"marketting", url:"markettingT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
 
 	this.startSite = function(){
@@ -4984,7 +4984,7 @@ var MainNavi = new function () {
 	}
 
 	this.clickIt = function(e) {
-
+		$('#stageHolder .title-page').css('display','none');
 		if (e != null) e.preventDefault();
 
 		if (DTSite.loadingProject) return;

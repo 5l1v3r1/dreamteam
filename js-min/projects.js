@@ -2471,7 +2471,7 @@ ProjectsPage.prototype.arcBack = function(){
 }
 
 ProjectsPage.prototype.disableAction = function(el){
-	$(el).off("mouseover");
+
 	$(el).off("mouseout");
 
 	$(el).off("click");
@@ -2487,6 +2487,8 @@ ProjectsPage.prototype.setUpAction = function(el){
 		//console.log(el);
 
 		$(el).on("click", function(event){
+	$('#stageHolder .title-page').css('display','none');
+	$(el).off("mouseover");
 			event.preventDefault();
 
 			if (DTSite.loadingProject) return;
