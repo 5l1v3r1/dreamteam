@@ -3,11 +3,11 @@
 #developmentTitle {
 	margin-top: 80px;
 	text-align: center;
-    font-size: 85px;
+    font-size: 100px;
     font-family: "bebas_neueregular", Arial;
     letter-spacing: 30px;
     position: absolute;
-    margin-left: 350px;
+    width: 100%;
 }
 </style>
 

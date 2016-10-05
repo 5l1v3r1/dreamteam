@@ -3,11 +3,11 @@
 #markettingTitle {
 	margin-top: 80px;
 	text-align: center;
-    font-size: 85px;
+    font-size: 100px;
     font-family: "bebas_neueregular", Arial;
     letter-spacing: 30px;
     position: absolute;
-    margin-left: 385px;
+    width: 100%;
 }
 </style>
 
@@ -24,7 +24,7 @@
 	</div>
 </div>
 <div id="stageHolder">
-	<div id="markettingTitle" class="title-page" style="display: block;">Marketting</div>
+	<div id="markettingTitle" class="title-page" style="display: block;">Marketing</div>
 	<div id="projectsStageHolder"></div>
 	<div id="navigationProjects"></div>
 	<div id="navigationPhotos"></div>
