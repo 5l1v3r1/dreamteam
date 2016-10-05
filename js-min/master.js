@@ -11,7 +11,7 @@ AboutPage.prototype.setUp = function(){
 }
 
 AboutPage.prototype.startPage = function(){
-
+	$("#homeHolder").css("display", "none");
 	var delayIt = 2.9;
 
 	if (DTSite.mobileSimple == true || DTSite.webGLReady == false){
@@ -70,6 +70,7 @@ AboutPage.prototype.startPage = function(){
 
 	}
 
+	// $("#logoContainer").css('display', 'block');
 }
 
 AboutPage.prototype.scrollMade = function(ref){
@@ -3284,10 +3285,12 @@ HomePage.prototype.startPage = function(delay_){
 			rand = Math.random() * (ile - 1);
 		};
 
-		$(DTSite.scrollDown).css("display","block"); 
+		$(DTSite.scrollDown).css("display","block");
+		// $('#homeHolder').css("display","block"); 
 		$(DTSite.scrollDown).css("cursor","default"); 
 	}else{
 		$(DTSite.scrollDown).css("display","none"); 
+		// $('#homeHolder').css("display","none"); 
 	}
 
 	if (!DTSite.mobileSimple) var where = parseInt(DTSite.browser_height/2 - (DTSite.titleContinerH/2));
@@ -4211,37 +4214,62 @@ function changePage(){
 
 function startPage(){
 	if (DTSite.selectedMenu == 1){
-
+		$("#homeHolder").css("display", "none");
+		$("#titlesContainer").css("display", "none");
 		$("#logoContainer").css("display", "block");
-
+		
 		DTSite.aboutPage.startPage();
 		DTSite.openedPage = DTSite.aboutPage;
 	}else if(DTSite.selectedMenu == 2){
-
+		$("#homeHolder").css("display", "none");
+		$("#titlesContainer").css("display", "none");
 		$("#logoContainer").css("display", "block");
 
 		DTSite.stagePage.startPage();
 		DTSite.openedPage = DTSite.stagePage;
 	}else if(DTSite.selectedMenu == 3){
-
+		$("#homeHolder").css("display", "none");
+		$("#titlesContainer").css("display", "none");
 		$("#logoContainer").css("display", "block");
 
 		DTSite.eventsPage.startPage();
 		DTSite.openedPage = DTSite.eventsPage;
 	}else if(DTSite.selectedMenu == 4){
-
+		$("#homeHolder").css("display", "none");
+		$("#titlesContainer").css("display", "none");
 		$("#logoContainer").css("display", "block");
 
 		DTSite.contactPage.startPage();
 		DTSite.openedPage = DTSite.contactPage;
 	}else if(DTSite.selectedMenu == 0){
-
 		$("#logoContainer").css("display", "none");
+		$("#titlesContainer").css("display", "none");
 
 		DTSite.homePage.startPage(0.3);
 		DTSite.openedPage = DTSite.homePage;
-	}
 
+		$("#homeHolder").css('display', 'block');
+			var $all_msg = $('#homeHolder .title');
+			  //get a list of letters from the welcome text
+			  var $wordList = $('#homeHolder .title').text().split("");
+			  //clear the welcome text msg
+			  $('#homeHolder .title').text("");
+			  //loop through the letters in the $wordList array
+			  $.each($wordList, function(idx, elem) {
+			    //create a span for the letter and set opacity to 0
+			    var newEL = $("<span/>").text(elem).css({
+			      opacity: 0
+			    });
+			    //append it to the welcome message
+			    newEL.appendTo($all_msg);
+			    //set the delay on the animation for this element
+			    newEL.delay(idx * 70);
+			    //animate the opacity back to full 1
+			    newEL.animate({
+			      opacity: 1
+			    }, 1100);
+			  });
+	}
 	TweenLite.delayedCall(1, function(){ DTSite.changePageInProgress = false;} );
 }
 
@@ -4571,6 +4599,31 @@ var MainNavi = new function () {
 			TweenLite.to("#txtOverN", 0.9, {x:(DTSite.selectedMenu - 1)*208, delay:1, ease: Power4.easeOut});
 
 			TweenLite.to("#txtOverN2", 0.8, {x:-(DTSite.selectedMenu - 1)*208, y:0, z:0, transformPerspective:100, transformOrigin:"104 55% 50%", delay:1, ease: Power4.easeOut});
+
+			// TweenLite.to("#txtOverN2123", 0.8, {x:-(DTSite.selectedMenu - 1)*208, y:0, z:0, transformPerspective:100, transformOrigin:"104 55% 50%", delay:1, ease: Power4.easeOut});
+			
+			$("#homeHolder").css('display', 'block');
+			var $all_msg = $('#homeHolder .title');
+			  //get a list of letters from the welcome text
+			  var $wordList = $('#homeHolder .title').text().split("");
+			  //clear the welcome text msg
+			  $('#homeHolder .title').text("");
+			  //loop through the letters in the $wordList array
+			  $.each($wordList, function(idx, elem) {
+			    //create a span for the letter and set opacity to 0
+			    var newEL = $("<span/>").text(elem).css({
+			      opacity: 0
+			    });
+			    //append it to the welcome message
+			    newEL.appendTo($all_msg);
+			    //set the delay on the animation for this element
+			    newEL.delay(idx * 70);
+			    //animate the opacity back to full 1
+			    newEL.animate({
+			      opacity: 1
+			    }, 1100);
+			  });
+			// alert("test123");
 		}else{
 			$("#mobileNaviBtn").css("display", "block");
 
