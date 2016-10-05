@@ -418,7 +418,7 @@ AboutPage.prototype.setMcPosition = function(ref){
 						projectObj.pictures.push(obj);
 					}*/
 
-					console.log(projectObj);
+					// console.log(projectObj);
 
 					that.stageItems.push(projectObj);
 				});
@@ -1791,13 +1791,13 @@ BgDreamTeam.prototype.update = function(){
 	//this.renderer.render(this.scene, this.camera);
 
 	if (DTSite.counterRender % 60 == 0){
-		console.log('x ', this.camera.position.x);
-		console.log('y ', this.camera.position.y);
-		console.log('z ', this.camera.position.z);
+		// console.log('x ', this.camera.position.x);
+		// console.log('y ', this.camera.position.y);
+		// console.log('z ', this.camera.position.z);
 
-		console.log('rx ', this.cubeLookAt.position.x);
-		console.log('ry ', this.cubeLookAt.position.y);
-		console.log('rz ', this.cubeLookAt.position.z);
+		// console.log('rx ', this.cubeLookAt.position.x);
+		// console.log('ry ', this.cubeLookAt.position.y);
+		// console.log('rz ', this.cubeLookAt.position.z);
 	}
 }
 
