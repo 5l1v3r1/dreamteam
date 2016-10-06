@@ -1,7 +1,7 @@
 <style type="text/css">
 
 #contactTitle {
-	margin-top: 190px;
+	margin-top: 100px;
 	text-align: center;
     font-size: 125px;
     font-family: "bebas_neueregular", Arial;
