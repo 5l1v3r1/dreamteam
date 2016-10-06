@@ -32,9 +32,7 @@
 </div>
 
 <script type="text/javascript">
-$('.projectMiniImg').click(function(){
-	alert(111111);
-});
+
 $( document ).ready(function() {
     $("#developmentTitle").css('display', 'block');
 			var $all_msg = $('#developmentTitle');
