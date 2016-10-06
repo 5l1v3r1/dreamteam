@@ -2829,7 +2829,7 @@ ProjectsPage.prototype.fillProjects = function (ref){
 
 		if (DTSite.addHistory) {
 			DTSite.changePageHistory = false;
-			History.replaceState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " DreamTeam Katarzyna Konkowska", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short);
+			History.replaceState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " Digital Ensource", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short);
 		}
 
 	}

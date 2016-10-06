@@ -3682,7 +3682,7 @@ HomePage.prototype.setMcPosition = function(ref){
 			DTSite.openedPage = DTSite.homePage;
 			DTSite.homePage.startPage(2.5);
 
-			History.replaceState({state:DTSite.selectedMenu}, "DreamTeam Katarzyna Konkowska", DTSite.adressTmp);
+			History.replaceState({state:DTSite.selectedMenu}, "Digital Ensource", DTSite.adressTmp);
 		}
 
 
@@ -4963,7 +4963,7 @@ var MainNavi = new function () {
 			if (DTSite.addHistory) {
 
 				DTSite.changePageHistory = false;
-				History.pushState({state:menuNew}, "DreamTeam Katarzyna Konkowska",  DTSite.adressTmp+DTSite.siteTitles[menuNew].short);
+				History.pushState({state:menuNew}, "Digital Ensource",  DTSite.adressTmp+DTSite.siteTitles[menuNew].short);
 			}
 		}else{
 
@@ -5029,7 +5029,7 @@ var MainNavi = new function () {
 			if (DTSite.addHistory) {
 
 				DTSite.changePageHistory = false;
-				History.pushState({state:menuNew}, "DreamTeam Katarzyna Konkowska",  DTSite.adressTmp+DTSite.siteTitles[menuNew].short);
+				History.pushState({state:menuNew}, "Digital Ensource",  DTSite.adressTmp+DTSite.siteTitles[menuNew].short);
 			}
 		}else{
 
@@ -5087,9 +5087,9 @@ var MainNavi = new function () {
 				DTSite.changePageHistory = false;
 
 				if (DTSite.selectedProductURL == ""){
-					History.pushState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " DreamTeam Katarzyna Konkowska", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short);
+					History.pushState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " Digital Ensource", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short);
 				}else{
-					History.pushState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " DreamTeam Katarzyna Konkowska", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short + "/"+ DTSite.selectedProductURL);
+					History.pushState({state:DTSite.selectedMenu}, DTSite.siteTitles[DTSite.selectedMenu].title + " Digital Ensource", DTSite.adressTmp+DTSite.siteTitles[DTSite.selectedMenu].short + "/"+ DTSite.selectedProductURL);
 				}
 			}
 		});
