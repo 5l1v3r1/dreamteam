@@ -1,13 +1,13 @@
 <style type="text/css">
 
 #contactTitle {
-	margin-top: 80px;
+	margin-top: 190px;
 	text-align: center;
-    font-size: 85px;
+    font-size: 125px;
     font-family: "bebas_neueregular", Arial;
     letter-spacing: 30px;
     position: absolute;
-    margin-left: 490px;
+    width: 100%;
 }
 </style>
 

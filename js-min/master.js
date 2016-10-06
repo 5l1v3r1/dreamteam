@@ -3584,11 +3584,11 @@ HomePage.prototype.setMcPosition = function(ref){
 	//this.adressTmp = "/clients/dteam_dev/";
 	this.adressTmp = "/";
 
-	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"development.php"}, {title:"Marketting", short:"marketting", url:"marketting.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitles = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"development.php"}, {title:"Marketing", short:"marketing", url:"marketing.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentM.php"}, {title:"Marketting", short:"marketting", url:"markettingM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesM = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentM.php"}, {title:"Marketing", short:"marketing", url:"marketingM.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
-	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentT.php"}, {title:"Marketting", short:"marketting", url:"markettingT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
+	this.siteTitlesT = [{title:"Home", short:"", url:"home.php"},{title:"About", short:"about", url:"about.php"}, {title:"Development", short:"development", url:"developmentT.php"}, {title:"Marketing", short:"marketing", url:"marketingT.php"}, {title:"Contact", short:"contact", url:"contact.php"}];
 	
 
 	this.startSite = function(){
@@ -4241,7 +4241,7 @@ function startPage(){
 		DTSite.contactPage.startPage();
 		DTSite.openedPage = DTSite.contactPage;
 	}else if(DTSite.selectedMenu == 0){
-		$("#logoContainer").css("display", "none");
+		$("#logoContainer").css("display", "block");
 		$("#titlesContainer").css("display", "none");
 
 		DTSite.homePage.startPage(0.3);
@@ -4623,6 +4623,8 @@ var MainNavi = new function () {
 			    }, 1100);
 			  });
 			// alert("test123");
+
+			$("#logoContainer").css('display', 'block');
 		}else{
 			$("#mobileNaviBtn").css("display", "block");
 
