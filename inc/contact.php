@@ -9,7 +9,7 @@
 	    width: 100%;
 	}
 	.contact-form{
-	    margin-top: 165px;
+        margin-top: 115px;
 	}
 
 	.input-contact{
@@ -20,7 +20,7 @@
 		background-color: rgba(255, 255, 255, 0); 
 		width: 350px; 
 		display: block; 
-		margin: 15px auto;
+		margin: 10px auto;
 		font-family: 'bebas_neuebold';
 	    padding-left: 10px;
 	}
@@ -42,24 +42,22 @@
 		color: black;
     	background: white;
     	font-family: "GT-Walsheim-Medium";
-    	font-size: 14px;
-    	width: 100px;
+    	font-size: 18px;
+    	width: 150px;
 	    border: 2px solid white;
 	    border-radius: 5px;
-	    margin-top: -20px;
-    	position: absolute;
-    	margin-left: 350px;
+        display: block;
+    	margin: 15px auto;
     	cursor: pointer;
 	}
 </style>
 
 <div id="contactHolder">
-	<h1 id="headerContact">Contact - Katarzyna Konkowska</h1>
 	<div id="contactName">DIGITAL ENSOURCE</div>
-	<div id="contactT1"><span id="contactF1">M: </span><span id="contactF1_2">... ... ...</span><div class="clear"></div></div>
-	<div id="contactT2"><div id="contactF2">E:&nbsp;</div><div id="contactF2_1"><div id="contactF2_2">... ... ...</div><div id="contactF2_3">... ... ...</div><div id="contactF2_4">... ... ...</div><div id="btnContact"></div></div>
+	<div id="contactT1" style="margin-top: -50px;"><span id="contactF1">M: </span><span id="contactF1_2">... ... ...</span><div class="clear"></div></div>
+	<div id="contactT2" style="margin-top: -50px;"><div id="contactF2">E:&nbsp;</div><div id="contactF2_1"><div id="contactF2_2">... ... ...</div><div id="contactF2_3">... ... ...</div><div id="contactF2_4">... ... ...</div><div id="btnContact"></div></div>
 	<div class="clear"></div></div>
-	<div id="contactLine"></div>
+	<div id="contactLine" style="margin-top: -30px; max-height: 25px;"></div>
 
 	<div class="clear"></div>
 
@@ -76,8 +74,11 @@
 		<input type="text" name="name" class="input-contact" align="center" placeholder="Full Name"/>
 		<input type="text" name="email" class="input-contact" align="center" placeholder="Email" />
 		<textarea class="input-contact" name="message" type="text" placeholder="Message" style="height:80px; width: 350px; display: block; margin: 0 auto;"></textarea>
-		<button id="submit" type="submit" >Submit</button>
+		<button id="submit" type="submit" >Submit</button> <img style="width: 150px; display: block;
+    margin: 0 auto;" src="img/ajax-load.gif">
 	</form>
+	<p id="notice" style="text-align: center; display:none; color: red; font-family: 'GT-Walsheim-Medium';
+    font-size: 17px;"> Email Sent. Thanks for your contact !</p>
 </div>
 
 <script type="text/javascript">
@@ -92,7 +93,7 @@ $( "form.contact-form" ).submit(function( event ) {
         },
         success: function (result){
         	if(result == 1){
-        		alert('sent');
+        		$('#notice').fadeIn();
         	}
         }
     });
