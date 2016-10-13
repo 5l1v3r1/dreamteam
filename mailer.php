@@ -26,7 +26,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('kill3r557@yahoo.com', 'Mailer');
-$mail->addAddress('hoangtrungweb@gmail.com', 'Joe User');     // Add a recipient
+$mail->addAddress('topinfo557@gmail.com', 'Joe User');     // Add a recipient
 // $mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('cc@example.com');

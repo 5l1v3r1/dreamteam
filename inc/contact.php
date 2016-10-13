@@ -9,7 +9,7 @@
 	    width: 100%;
 	}
 	.contact-form{
-        margin-top: 115px;
+        margin-top: 80px;
 	}
 
 	.input-contact{
@@ -59,30 +59,39 @@
 	<div class="clear"></div></div>
 	<div id="contactLine" style="margin-top: -30px; max-height: 25px;"></div>
 
+
+	<form class="contact-form" method="post">
+		<input type="text" name="name" class="input-contact" align="center" placeholder="Full Name"/>
+		<input type="text" name="email" class="input-contact" align="center" placeholder="Email" />
+		<textarea class="input-contact" name="message" type="text" placeholder="Message" style="height:80px; width: 350px; display: block; margin: 0 auto;"></textarea>
+		<button id="submit" type="submit" >Submit</button> <img id="loading" style="width: 150px; 
+    margin: -70px auto; display: none;" src="img/ajax-load.gif">
+	</form>
+	<p id="notice" style="text-align: center; display:none; color: red; font-family: 'GT-Walsheim-Medium';
+    font-size: 17px; "> Email Sent. Thanks for your contact !</p>
+
+
+
+
+
+
 	<div class="clear"></div>
 
 </div>
 <style type="text/css">
 </style>
-<div id="stageHolder">
+<div id="stageHolder" style="z-index: -9;">
 	
 	<div id="contactTitle" class="title-page" style="display: block;">Contact</div>
 	<div id="projectsStageHolder"></div>
 	<div id="navigationProjects"></div>
 	<div id="navigationPhotos"></div>
-	<form class="contact-form" method="post">
-		<input type="text" name="name" class="input-contact" align="center" placeholder="Full Name"/>
-		<input type="text" name="email" class="input-contact" align="center" placeholder="Email" />
-		<textarea class="input-contact" name="message" type="text" placeholder="Message" style="height:80px; width: 350px; display: block; margin: 0 auto;"></textarea>
-		<button id="submit" type="submit" >Submit</button> <img style="width: 150px; display: block;
-    margin: 0 auto;" src="img/ajax-load.gif">
-	</form>
-	<p id="notice" style="text-align: center; display:none; color: red; font-family: 'GT-Walsheim-Medium';
-    font-size: 17px;"> Email Sent. Thanks for your contact !</p>
+
 </div>
 
 <script type="text/javascript">
 $( "form.contact-form" ).submit(function( event ) {
+	$('#loading').css('display','block');
 	form = $(this).serialize();
 	$.ajax({
         url : "mailer.php",
@@ -92,6 +101,7 @@ $( "form.contact-form" ).submit(function( event ) {
             'form' : form,
         },
         success: function (result){
+        	$('#loading').css('display','none');
         	if(result == 1){
         		$('#notice').fadeIn();
         	}
