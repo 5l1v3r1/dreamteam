@@ -26,7 +26,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('kill3r557@yahoo.com', 'Mailer');
-$mail->addAddress('topinfo557@gmail.com', 'Joe User');     // Add a recipient
+$mail->addAddress('hoangtrungweb@gmail.com', 'Joe User');     // Add a recipient
 // $mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('cc@example.com');
@@ -36,7 +36,7 @@ $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = $body;
+$mail->Subject = 'Have contact from DreamTeam';
 // $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 $mail->MsgHTML($body);

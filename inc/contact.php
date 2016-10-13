@@ -67,7 +67,7 @@
 		<button id="submit" type="submit" >Submit</button> <img id="loading" style="width: 150px; 
     margin: -70px auto; display: none;" src="img/ajax-load.gif">
 	</form>
-	<p id="notice" style="text-align: center; display:none; color: red; font-family: 'GT-Walsheim-Medium';
+	<p id="notice" style="text-align: center; display:none; color: #009688; font-family: 'GT-Walsheim-Medium';
     font-size: 17px; "> Email Sent. Thanks for your contact !</p>
 
 
