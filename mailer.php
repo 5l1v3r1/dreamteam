@@ -6,6 +6,11 @@ $arr = [];
         	$tmp = explode( '=', $val );
             $arr[ $tmp[0] ] = $tmp[1];
         }
+
+
+$arr['name'] = str_replace("+"," ",$arr['name']);
+$arr['email'] = str_replace("%","@",$arr['email']);
+$arr['message'] = str_replace("+"," ",$arr['message']);
 require 'PHPMailer-master/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
